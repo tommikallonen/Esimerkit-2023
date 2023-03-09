@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lomake-esimerkki</title>
+</head>
+
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Kerroppa jotain</legend>
+            <table>
+                <tr>
+                    <td colspan="2">Henkilötiedot:</td>
+                    <td colspan="2">Ajoneuvo:</td>
+                </tr>
+                <tr>
+                    <td><label>Etunimi</label></td>
+                    <td><input type="text" id="fname" name="fname"></td>
+                    <td>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1">Polkupyörä</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Sukunimi</label></td>
+                    <td><input type="text" id="lname" name="lname"></td>
+                    <td>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2">Auto</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Selain:</td>
+                    <td><input list="browsers">
+                        <datalist id="browsers">
+                            <option value="Internet Explorer">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Vene</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Auto:</td>
+                    <td>
+                        <select id="cars" name="cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><input type="file"></td>
+                </tr>
+
+            </table>
+
+
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
